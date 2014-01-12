@@ -17,5 +17,6 @@
 		<dependency org="commons-logging" name="commons-logging" rev="latest.integration" conf="compile->master;sources" />
 		<dependency org="log4j" name="log4j" rev="1.2.17" conf="compile->master;sources" />
 		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.5" conf="compile->master;sources"/>
+		<dependency org="org.mockito" name="mockito-core" rev="1.9.5" conf="test->default;sources" />
 	</dependencies>
 </ivy-module>
