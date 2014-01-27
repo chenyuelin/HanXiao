@@ -11,7 +11,6 @@ import java.net.UnknownHostException;
 public class Client {
 	
 	public static void main(String[] args) {
-		Message msg = new Message();
 		try {
 			Socket socket = new Socket("localhost", 9528);
 			ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
@@ -20,6 +19,7 @@ public class Client {
 			
 			BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 			String line = null;
+			Message msg = new Message();
 			while((line = reader.readLine()) != null) {
 				msg.setMsg(line);
 				msg.setMsgType(1);

@@ -11,7 +11,6 @@ import java.net.Socket;
 public class Server {
 
 	public static void main(String[] args) {
-		Message msg = new Message();
 		
 		try {
 			ServerSocket ss = new ServerSocket(9528);
@@ -23,6 +22,7 @@ public class Server {
 			
 			BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 			String line = null;
+			Message msg = new Message();
 			while((line = reader.readLine()) != null) {
 				msg.setMsg(line);
 				msg.setMsgType(0);
