@@ -3,7 +3,7 @@ window.onload = function init() {
 	for (var i = 0; i < effectLinks.lenght; i ++) {
 		effectLinks.onclick = setEffect;
 	}
-	
+//	2121
 	var controlLinks = document.querySelectorAll("a.control");
 	for (var i = 0; i < controlLinks.length; i ++) {
 		controlLinks[i].onclick = handleControl;
