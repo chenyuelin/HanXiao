@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GB18030"?>
+<ivysettings>
+	<resolvers>
+		<chain name="public" returnFirst="true">
+			<ibiblio name="public-oschina" m2compatible="true" root="http://maven.oschina.net/content/groups/public/" />
+			<ibiblio name="public-maven" m2compatible="true" />
+		</chain>
+	</resolvers>
+
+	<settings defaultResolver="default" />
+	
+	<include url="${ivy.default.settings.dir}/ivysettings-shared.xml" />
+	<include url="${ivy.default.settings.dir}/ivysettings-local.xml" />
+	<include url="${ivy.default.settings.dir}/ivysettings-main-chain.xml" />
+	<include url="${ivy.default.settings.dir}/ivysettings-default-chain.xml" />
+
+</ivysettings>
